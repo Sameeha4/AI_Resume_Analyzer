@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:#f8fafc;
+    color:#1e293b;
+    padding:40px;
+}
+
+/* Header */
+
+.page-header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.page-header h1{
+    font-size:3rem;
+    font-weight:700;
+    color:#0f172a;
+    margin-bottom:15px;
+}
+
+.page-header p{
+    max-width:700px;
+    margin:auto;
+    color:#64748b;
+    line-height:1.8;
+    font-size:1rem;
+}
+
+/* Dashboard Grid */
+
+.dashboard{
+    max-width:1300px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:25px;
+}
+
+/* Cards */
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    color:#2563eb;
+    margin-bottom:15px;
+    font-size:1.2rem;
+}
+
+/* ATS Score Card */
+
+.score-card{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.score{
+    font-size:4rem;
+    font-weight:700;
+    color:#22c55e;
+}
+
+/* Recommendation */
+
+.recommendation-card{
+    grid-column:span 2;
+}
+
+/* Paragraphs */
+
+.card p{
+    color:#475569;
+    line-height:1.8;
+}
+
+/* Lists */
+
+ul{
+    list-style:none;
+}
+
+li{
+    background:#eff6ff;
+    border-left:4px solid #2563eb;
+    padding:12px;
+    margin-bottom:10px;
+    border-radius:10px;
+    color:#334155;
+}
+
+/* Action Section */
+
+.action-section{
+    text-align:center;
+    margin-top:50px;
+}
+
+.chat-link{
+    text-decoration:none;
+}
+
+/* Button */
+
+.chat-btn{
+    border:none;
+    padding:18px 35px;
+    border-radius:14px;
+    background:#4f46e5;
+    color:white;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 10px 20px rgba(79,70,229,.25);
+}
+
+.chat-btn:hover{
+    background:#4338ca;
+    transform:translateY(-2px);
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+    body{
+        padding:20px;
+    }
+
+    .page-header h1{
+        font-size:2.2rem;
+    }
+
+    .dashboard{
+        grid-template-columns:1fr;
+    }
+
+    .recommendation-card{
+        grid-column:span 1;
+    }
+
+    .score{
+        font-size:3rem;
+    }
+}

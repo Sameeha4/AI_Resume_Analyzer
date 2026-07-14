@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="hero">
+
+    <div class="content">
+
+        <span class="badge">🚀 AI Powered ATS Analysis</span>
+
+        <h1>AI Resume Analyzer</h1>
+
+        <p>
+            Upload your resume and compare it with any job description.
+            Get ATS score, missing skills, and personalized recommendations.
+        </p>
+
+        <div class="container">
+
+            <form method="post" enctype="multipart/form-data">
+
+                <label>Upload Resume (PDF)</label>
+                <input type="file" name="resume_file" accept=".pdf" required>
+
+                <label>Job Description</label>
+
+                <textarea
+                    name="description"
+                    placeholder="Paste the job description here..."
+                    required></textarea>
+
+                <button type="submit">
+                    Analyze Resume
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="illustration">
+        ✨ <img
+        src="https://resume.io/assets/ats/ats-hero-3e3a488e.png"
+        alt="Resume Illustration">
+
+</div>
+
+</body>
+</html>

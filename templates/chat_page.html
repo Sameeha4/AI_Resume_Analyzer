@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Counselor</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='chat.css') }}">
+</head>
+<body>
+
+    <div class="chat-container">
+
+        <div class="chat-header">
+            <h1>🤖 AI Resume Counselor</h1>
+            <p>
+                Ask questions about your resume and get personalized
+                improvement suggestions.
+            </p>
+        </div>
+
+        <div class="chat-area">
+
+            {% if bot_response %}
+
+            <div class="message user-message">
+                <h3>You</h3>
+                <p>{{ request.form.get('question','') }}</p>
+            </div>
+
+            <div class="message bot-message">
+                <h3>AI Counselor</h3>
+                <p>{{ bot_response }}</p>
+            </div>
+
+            {% endif %}
+
+        </div>
+
+        <form method="post" class="chat-form">
+
+            <textarea
+                name="question"
+                placeholder="Ask something about your resume..."
+                required></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+        <a href="{{ url_for('report_page') }}" class="back-link">
+                📊 View Report
+        </a>
+        <a href="{{ url_for('home_page') }}" class="back-link">
+            ← Back to Resume Analyzer
+        </a>
+
+    </div>
+
+</body>
+</html>
