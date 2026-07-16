@@ -60,6 +60,8 @@ Uses Groq API with Llama 3.3 model for resume analysis and career guidance.
 
 ## 📸 Screenshots
 
+## 📸 Screenshots
+
 ### Home Page
 ![Home Page](https://github.com/user-attachments/assets/e5b03c80-2b00-4239-9906-809973b2ef2f)
 
@@ -71,6 +73,9 @@ Uses Groq API with Llama 3.3 model for resume analysis and career guidance.
 
 ### Feedback Result
 ![Feedback Result](https://github.com/user-attachments/assets/501f1ebb-0a05-4df2-9d72-75f9637a924d)
+
+### Final Output
+![Final Output](https://github.com/user-attachments/assets/42b8c208-a13b-4678-81a5-c4efb9280d7b)
 
 ### Final Output
 ![Final Output](https://github.com/user-attachments/assets/42b8c208-a13b-4678-81a5-c4efb9280d7b)
